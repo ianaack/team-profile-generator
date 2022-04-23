@@ -1,3 +1,4 @@
+// required modules
 const Intern = require("../lib/Intern");
 
 test("get Intern data from Employee Class", () => {
@@ -19,7 +20,8 @@ test("get Intern school data", () => {
   expect(intern.school).toBe("University of Toronto");
 });
 
-test("get all of the Intern's data", () => {
+test("getRole() should return 'Intern'", () => {
+  const testValue = "Intern";
   const intern = new Intern(
     "Ian",
     1,
@@ -27,7 +29,7 @@ test("get all of the Intern's data", () => {
     "University of Toronto"
   );
 
-  expect(intern.getRole()).toHaveProperty("school");
+  expect(intern.getRole()).toBe(testValue);
 });
 
 test("get Intern's school from getSchool()", () => {

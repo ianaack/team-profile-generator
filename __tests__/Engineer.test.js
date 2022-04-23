@@ -1,3 +1,4 @@
+// required modules
 const Engineer = require("../lib/Engineer");
 
 test("get Engineer data from Employee Class", () => {
@@ -19,7 +20,8 @@ test("get Engineer github data", () => {
   expect(engineer.github).toBe("github.com/ianaack");
 });
 
-test("get all of the Engineer's data", () => {
+test("getRole() should return 'Engineer'", () => {
+  const testValue = "Engineer";
   const engineer = new Engineer(
     "Ian",
     1,
@@ -27,7 +29,7 @@ test("get all of the Engineer's data", () => {
     "github.com/ianaack"
   );
 
-  expect(engineer.getRole()).toHaveProperty("github");
+  expect(engineer.getRole()).toBe(testValue);
 });
 
 test("get Engineer's github from getGithub()", () => {
