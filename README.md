@@ -51,6 +51,17 @@ node index.js
 
 You will then be asked a series of questions that, once complete, will generate a team profile webpage.
 
+Below are screenshots of what your terminal output should look like, as well as an example HTML page generated using the terminal:
+
+<img width="473" alt="terminalOutput" src="https://user-images.githubusercontent.com/47282257/164955354-c5b44b4d-0be9-4a4c-99a5-992830f1687f.png">
+<img width="788" alt="generatedHTML" src="https://user-images.githubusercontent.com/47282257/164955350-9e15134e-bea1-409a-8190-88a1f192797c.png">
+
+This is a link to an example terminal input:
+https://drive.google.com/file/d/1i0bjRiP14D_cThbbQWsUDLweS40CY5D0/view?usp=sharing
+
+This is a link to an example of the generated HTML:
+https://drive.google.com/file/d/1PWhhVWaJsUZtg29s7MWDAqzhgM950ZWH/view?usp=sharing
+
 ## Tests
 
 Testing for this application has been implemented using the node package "Jest".
